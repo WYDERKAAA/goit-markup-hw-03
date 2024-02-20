@@ -29,9 +29,9 @@
         <link rel="stylesheet" href="css/styles.css" />
     </head>
 
-    <body class="center-area">
+    <body>
         <header>
-            <div class="nav-container container-default">
+            <div class="nav-container container">
                 <!-- Navigation links -->
 
                 <nav class="navigation-links flex">
@@ -54,7 +54,7 @@
 
             <!--address list-->
 
-            <address class="address-links flex">
+            <address class="nav-container address-links flex">
                 <ul>
                     <li>
                         <a href="mailto:info@devstudio.com" class="a-link"
@@ -73,7 +73,7 @@
         <main>
             <!--hero-image & main button-->
 
-            <div class="hero-container">
+            <div class="hero-container container">
                 <section class="hero-img">
                     <h1 class="hero-text">
                         Effective Solutions for Your Business
@@ -86,13 +86,13 @@
             </div>
 
             <!--section four features-->
-            <div class="padding-top-bottom">
+            <div class="padding-top-bottom container flex">
                 <section class="features-list">
                     <h2 class="main-header-title visually-hidden">
                         Our Features
                     </h2>
                     <ul>
-                        <li class="feature-list flex">
+                        <li class="feature-list">
                             <h3 class="header-title">Strategy</h3>
                             <p class="p-section-text">
                                 Our goal is to identify the business problem to
@@ -100,7 +100,7 @@
                                 solution.
                             </p>
                         </li>
-                        <li class="feature-list flex">
+                        <li class="feature-list">
                             <h3 class="header-title">Punctuality</h3>
                             <p class="p-section-text">
                                 Bring the key message to the brand's audience
@@ -108,7 +108,7 @@
                                 time.
                             </p>
                         </li>
-                        <li>
+                        <li class="feature-list">
                             <h3 class="header-title">Diligence</h3>
                             <p class="p-section-text">
                                 Research and confirm brands that present the
@@ -116,7 +116,7 @@
                                 minimize risk.
                             </p>
                         </li>
-                        <li>
+                        <li class="feature-list">
                             <h3 class="header-title">Technologies</h3>
                             <p class="p-section-text">
                                 Design practice focused on digital experiences.
@@ -129,7 +129,7 @@
             </div>
             <!--section our team-->
 
-            <div class="padding-top-bottom">
+            <div class="padding-top-bottom container">
                 <section class="team-background">
                     <h2 class="main-header-title">Our Team</h2>
 
@@ -140,8 +140,12 @@
                                 alt="team-member-one"
                                 width="264"
                             />
-                            <h3 class="header-title">Mark Guerrero</h3>
-                            <p class="p-section-text">Product Designer</p>
+                            <div class="member-details">
+                                <h3 class="header-title text-control">
+                                    Mark Guerrero
+                                </h3>
+                                <p class="p-section-text">Product Designer</p>
+                            </div>
                         </li>
 
                         <li class="team-card-background flex">
@@ -150,8 +154,12 @@
                                 alt="team-member-two"
                                 width="264"
                             />
-                            <h3 class="header-title">Tom Ford</h3>
-                            <p class="p-section-text">Frontend Developer</p>
+                            <div class="member-details">
+                                <h3 class="header-title text-control">
+                                    Tom Ford
+                                </h3>
+                                <p class="p-section-text">Frontend Developer</p>
+                            </div>
                         </li>
 
                         <li class="team-card-background flex">
@@ -160,8 +168,12 @@
                                 alt="team-member-three"
                                 width="264"
                             />
-                            <h3 class="header-title">Camila Garcia</h3>
-                            <p class="p-section-text">Marketing</p>
+                            <div class="member-details">
+                                <h3 class="header-title text-control">
+                                    Camila Garcia
+                                </h3>
+                                <p class="p-section-text">Marketing</p>
+                            </div>
                         </li>
 
                         <li class="team-card-background flex">
@@ -170,91 +182,109 @@
                                 alt="team-member-four"
                                 width="264"
                             />
-                            <h3 class="header-title">Daniel Wilson</h3>
-                            <p class="p-section-text">UI Designer</p>
+                            <div class="member-details">
+                                <h3 class="header-title">Daniel Wilson</h3>
+                                <p class="p-section-text">UI Designer</p>
+                            </div>
                         </li>
                     </ul>
                 </section>
             </div>
             <!--section our portfolio-->
 
-            <section>
-                <h2 class="main-header-title">Our Portfolio</h2>
-                <ul>
-                    <li>
-                        <img
-                            src="./images/banking-app.jpg"
-                            alt="payment"
-                            width="360"
-                        />
-                        <h3 class="header-title">Banking App</h3>
-                        <p class="p-section-text">App</p>
-                    </li>
+            <div class="container">
+                <section>
+                    <h2 class="main-header-title">Our Portfolio</h2>
+                        <ul>
+                            <li class="gallery-text flex">
+                                <img
+                                src="./images/banking-app.jpg"
+                                alt="payment"
+                                width="360"
+                                />
+                                <div class="gallery-text-custom">
+                                <h3 class="header-title">Banking App</h3>
+                                <p class="p-section-text custom-margin">App</p>
+                            </li>
+                                </div>
 
-                    <li>
-                        <img
-                            src="./images/cashless-payment.jpg"
-                            alt="payment"
-                            width="360"
-                        />
-                        <h3 class="header-title">Cashless Payment</h3>
-                        <p class="p-section-text">Marketing</p>
-                    </li>
+                            <li class="gallery-text flex">
+                                <img
+                                src="./images/cashless-payment.jpg"
+                                alt="payment"
+                                width="360"
+                                />
+                                <div class="gallery-text-custom">
+                                <h3 class="header-title">Cashless Payment</h3>
+                                <p class="p-section-text custom-margin">Marketing</p>
+                            </li>
+                                </div>
 
-                    <li>
-                        <img
-                            src="./images/meditation-app.jpg"
-                            alt="app"
-                            width="360"
-                        />
-                        <h3 class="header-title">Meditation App</h3>
-                        <p class="p-section-text">App</p>
-                    </li>
+                            <li class="gallery-text flex">
+                                <img
+                                src="./images/meditation-app.jpg"
+                                alt="app"
+                                width="360"
+                                />
+                                <div class="gallery-text-custom">
+                                <h3 class="header-title">Meditation App</h3>
+                                <p class="p-section-text custom-margin">App</p>
+                            </li>
+                                </div>
 
-                    <li>
-                        <img
-                            src="./images/taxi-service.jpg"
-                            alt="taxi"
-                            width="360"
-                        />
-                        <h3 class="header-title">Taxi Service</h3>
-                        <p class="p-section-text">Marketing</p>
-                    </li>
+                            <li class="gallery-text flex">
+                                <img
+                                src="./images/taxi-service.jpg"
+                                alt="taxi"
+                                width="360"
+                                />
+                                <div class="gallery-text-custom">
+                                <h3 class="header-title">Taxi Service</h3>
+                                <p class="p-section-text custom-margin">Marketing</p>
+                            </li>
+                                </div>
 
-                    <li>
-                        <img
-                            src="./images/screen-illustrations.jpg"
-                            alt="phone"
-                            width="360"
-                        />
-                        <h3 class="header-title">Screen Illustrations</h3>
-                        <p class="p-section-text">Design</p>
-                    </li>
+                            <li class="gallery-text flex">
+                                <img
+                                src="./images/screen-illustrations.jpg"
+                                alt="phone"
+                                width="360"
+                                />
+                                <div class="gallery-text-custom">
+                                <h3 class="header-title">Screen Illustrations</h3>
+                                <p class="p-section-text custom-margin">Design</p>
+                            </li>
+                                </div>
 
-                    <li>
-                        <img
-                            src="./images/online-courses.jpg"
-                            alt="courses"
-                            width="360"
-                        />
-                        <h3 class="header-title">Online Courses</h3>
-                        <p class="p-section-text">Marketing</p>
-                    </li>
-                </ul>
-            </section>
+                            <li class="gallery-text flex">
+                                <img
+                                src="./images/online-courses.jpg"
+                                alt="courses"
+                                width="360"
+                                />
+                                <div class="gallery-text-custom">
+                                <h3 class="header-title">Online Courses</h3>
+                                <p class="p-section-text custom-margin">Marketing</p>
+                            </li>
+                                </div>
+                        </ul>
+                </section>
+            </div>
         </main>
 
         <!--Footer-->
-
+        
         <footer class="footer-background">
-            <a href="index.html" class="logo"
-                >Web<span class="logo-white">Studio</span></a
+            <div class="container footer-settings">
+            <a href="index.html" class="logo logo-footer"
+                >Web<span class="logo-white logo-footer">Studio</span></a
             >
 
             <p class="footer-bright-text">
                 Increase the flow of customers and sales for your business with
                 digital marketing & growth solutions.
             </p>
+            </div>
         </footer>
     </body>
 </html>
