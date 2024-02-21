@@ -1,9 +1,29 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    margin-block-start: 0;
+    margin-inline-end: 0;
+    padding: 0;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 /* global repeatable settings */
 
 .flex {
@@ -15,25 +35,21 @@ body {
 .text-control {
     text-align: center;
 }
-
-/*standaryzacja rozmiarów treści w nawigacji linków*/
-
-.container-default {
-    margin: 0 auto; /*wyśrodkowanie kontenera*/
-}
 .container {
     width: 1158px;
-    margin: 0px;
+    margin: 0 auto;
+    align-items: center;
 }
 
-.nav-container {
-    border-bottom: 1px solid #e7e9fc;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.section-test {
+.section {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+.header .container {
+    border-bottom: 1px solid #e7e9fc;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .logo {
@@ -65,17 +81,16 @@ ul {
 
 .navigation-links .link {
     color: #2e2f42;
+    align-items: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
-    align-items: center;
 }
 .navigation-list {
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24 0px;
 }
 .navigation-links .link:hover {
     color: #404bbf;
@@ -89,16 +104,20 @@ ul {
 
 .address-links {
     font-style: normal;
+    list-style: none;
+}
+.ul-alink {
+    display: flex;
     gap: 40px;
 }
 
 .a-link {
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
     text-decoration: none;
 }
+
 .link:hover,
 .a-link:hover {
     color: #404bbf;
@@ -115,11 +134,11 @@ ul {
 /* hero image & main button */
 .hero-container {
     background-color: #2e2f42;
-    padding-top: 188px;
-    padding-bottom: 188px;
 }
 
 .hero-img {
+    padding-top: 188px;
+    padding-bottom: 188px;
     text-align: center;
 }
 
@@ -165,19 +184,18 @@ ul {
     clip: rect(0, 0, 0, 0) !important;
     border: 0 !important;
 }
+.feature-list {
+    width: calc((100% - 72px) / 4);
+}
+.ul-features {
+    display: flex;
+    gap: 24px;
+}
 
 .padding-top-bottom {
     padding-top: 120px;
     padding-bottom: 120px;
     border: 1px;
-}
-
-.padding-settings {
-    gap: 24px;
-    width: calc((100% - 72px) / 4);
-}
-.feature-list {
-    width: calc((100% - 72px) / 4);
 }
 
 .main-header-title {
