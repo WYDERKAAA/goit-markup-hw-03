@@ -35,6 +35,12 @@ p {
 .text-control {
     text-align: center;
 }
+
+/*standaryzacja rozmiarów treści w nawigacji linków*/
+
+.container-default {
+    margin: 0 auto; /*wyśrodkowanie kontenera*/
+}
 .container {
     width: 1158px;
     margin: 0 auto;
@@ -183,6 +189,13 @@ ul {
     overflow: hidden !important;
     clip: rect(0, 0, 0, 0) !important;
     border: 0 !important;
+}
+.feature-list {
+    width: calc((100% - 72px) / 4);
+}
+.ul-features {
+    display: flex;
+    gap: 24px;
 }
 .feature-list {
     width: calc((100% - 72px) / 4);
