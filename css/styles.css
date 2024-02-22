@@ -232,6 +232,7 @@ ul {
     color: #2e2f42;
     margin-bottom: 8px;
     width: calc((100% - 72px) / 4);
+    display: inline-flex;
 }
 
 .member-details {
@@ -239,6 +240,7 @@ ul {
     padding-right: 16px;
     padding-bottom: 32px;
     padding-left: 16px;
+    text-align: center;
 }
 .ul-team {
     display: flex;
@@ -298,6 +300,7 @@ ul {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    text-align: center;
 }
 .ul-gallery {
     display: flex;
