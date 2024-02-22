@@ -279,6 +279,15 @@ ul {
     gap: 24px;
 }
 /* section our portfolio */
+
+.gallery {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.display-three {
+    width: calc((100% - 48px) / 3);
+}
+
 .gallery-text {
     flex-wrap: wrap;
     column-gap: 24px;
@@ -286,12 +295,15 @@ ul {
     width: calc((100% - 48px) / 3);
 }
 .gallery-text-custom {
-    padding-top: 32px;
-    padding-right: 16px;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+}
+.ul-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 .custom-margin {
     margin-bottom: 8px;
