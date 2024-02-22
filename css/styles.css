@@ -205,6 +205,8 @@ ul {
     gap: 24px;
 }
 
+/* section our team */
+
 .padding-top-bottom {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -229,6 +231,7 @@ ul {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
+    width: calc((100% - 72px) / 4);
 }
 
 .member-details {
@@ -236,6 +239,16 @@ ul {
     padding-right: 16px;
     padding-bottom: 32px;
     padding-left: 16px;
+}
+.ul-team {
+    display: flex;
+    gap: 24px;
+}
+.li-member-list {
+    margin-right: 24px;
+}
+.li-last-member-list {
+    margin-right: 0px;
 }
 .team-card-background {
     background-color: #ffffff;
@@ -251,7 +264,6 @@ ul {
     text-align: center;
 }
 
-/* section our team */
 .team-section {
     padding-top: 120px;
     padding-bottom: 120px;
