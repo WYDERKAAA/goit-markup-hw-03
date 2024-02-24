@@ -82,7 +82,7 @@ ul {
 
 .navigation-links .link {
     align-items: center;
-
+    display: flex;
     color: #2e2f42;
 
     font-size: 16px;
@@ -196,16 +196,17 @@ ul {
 /*section four features starts here */
 
 .visually-hidden {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
-    border: 0 !important;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 .feature-list {
+    display:block
     width: calc((100% - 72px) / 4);
 }
 .ul-features {
@@ -224,6 +225,9 @@ ul {
     color: #2e2f42;
     text-transform: capitalize;
     margin-bottom: 72px;
+    display: block;
+    display: flex;
+    
 }
 
 .advantage-name {
@@ -233,7 +237,6 @@ ul {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-    width: calc((100% - 72px) / 4);
     display: inline-flex;
 }
 .member-name {
@@ -243,7 +246,7 @@ ul {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-    width: calc((100% - 72px) / 4);
+
     display: inline-flex;
     text-align: center;
 }
@@ -251,6 +254,7 @@ ul {
 .member-details {
     padding: 32px 16px;
     text-align: center;
+    display: block;
 }
 .ul-team {
     display: flex;
@@ -317,6 +321,7 @@ ul {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    display: block;
 }
 
 .ul-gallery {
@@ -329,12 +334,12 @@ ul {
     margin-bottom: 8px;
 }
 /* footer section */
-.footer-settings {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.footer {
+    display: inline-block;
 }
 .footer-background {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 .logo-footer {
     display: inline-block;
