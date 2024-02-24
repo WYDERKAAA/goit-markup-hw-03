@@ -206,7 +206,7 @@ ul {
     border: 0;
 }
 .feature-list {
-    display:block
+    display: block;
     width: calc((100% - 72px) / 4);
 }
 .ul-features {
@@ -227,7 +227,6 @@ ul {
     margin-bottom: 72px;
     display: block;
     display: flex;
-    
 }
 
 .advantage-name {
