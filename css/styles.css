@@ -50,6 +50,7 @@ section {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+    display: flex;
 }
 
 .logo {
@@ -80,6 +81,8 @@ ul {
 /* navigation links */
 
 .navigation-links .link {
+    align-items: center;
+
     color: #2e2f42;
 
     font-size: 16px;
@@ -87,13 +90,21 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
-    align-items: center;
-    display: flex;
 }
+.li-nav {
+    display: flex;
+    padding: 24px 0;
+}
+.li-address {
+    display: flex;
+    align-items: center;
+}
+
 .navigation-list {
     gap: 40px;
     padding: 24 0px;
     display: flex;
+    flex: start;
 }
 .navigation-links .link:hover {
     color: #404bbf;
@@ -112,6 +123,7 @@ ul {
 }
 .ul-alink {
     display: flex;
+    align-items: center;
     gap: 40px;
 }
 
@@ -200,15 +212,6 @@ ul {
     display: flex;
     gap: 24px;
 }
-.feature-list {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    width: calc((100% - 72px) / 4);
-}
-.ul-features {
-    display: flex;
-    gap: 24px;
-}
 
 /* section our team */
 
@@ -246,10 +249,7 @@ ul {
 }
 
 .member-details {
-    padding-top: 32px;
-    padding-right: 16px;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 32px 16px;
     text-align: center;
 }
 .ul-team {
@@ -257,17 +257,16 @@ ul {
     gap: 24px;
 }
 .li-member-list {
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
     margin-right: 24px;
 }
-.li-last-member-list {
-    margin-right: 0px;
-}
+
 .team-card-background {
     background-color: #ffffff;
     gap: 24px;
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
 }
+
 .p-section-text {
     font-size: 16px;
     line-height: 1.5;
@@ -296,9 +295,7 @@ ul {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.display-three {
-    width: calc((100% - 48px) / 3);
-}
+
 .project-card-name {
     font-weight: 500;
     font-size: 20px;
@@ -306,22 +303,22 @@ ul {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-    width: calc((100% - 72px) / 4);
     display: inline-flex;
 }
 .gallery-text {
+    width: calc((100% - 48px) / 3);
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    width: calc((100% - 48px) / 3);
+
     display: flex;
 }
 .gallery-text-custom {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    text-align: center;
 }
+
 .ul-gallery {
     display: flex;
     flex-wrap: wrap;
