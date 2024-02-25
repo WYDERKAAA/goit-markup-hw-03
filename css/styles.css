@@ -199,19 +199,27 @@ section {
 .visually-hidden {
     position: absolute;
     width: 1px;
+
     height: 1px;
-    padding: 0;
+
     margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
+
     border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+
+    overflow: hidden;
 }
 
 .feature-list {
     display: flex;
     gap: 24px;
 }
-
+.advantage-list-item {
+    width: calc((100% - 72px) / 4);
+}
 .advantage-name {
     font-weight: 500;
     font-size: 20px;
@@ -269,8 +277,8 @@ section {
 .member-details {
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
     text-align: center;
     display: block;
 }
